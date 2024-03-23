@@ -5,6 +5,7 @@
 
 
 import dash
+import more_itertools
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output
@@ -63,7 +64,7 @@ def update_input_container(selected_statistics):
     if selected_statistics =='Yearly Statistics': 
         return False
     else: 
-        return Trie
+        return True
 
 #Callback for plotting
 # Define the callback function to update the input container based on the selected statistics
